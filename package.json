@@ -1,6 +1,6 @@
 {
   "name": "eslint-playground",
-  "description": "",
+  "description": "Playground for code formatter and linter",
   "version": "0.1.0",
   "author": "Benjamin Gudehus <benjamin.gudehus@canoo.com>",
   "repository": {
@@ -10,9 +10,14 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
+    "eslint": "4.19.1",
+    "eslint-plugin-html": "4.0.2",
+    "npm-run-all": "4.1.2",
     "js-beautify": "1.7.5"
   },
   "scripts": {
-    "format": "./node_modules/.bin/js-beautify test/*.html --replace --editorconfig --brace-style end-expand --operator-position before-newline"
+    "fix": "./node_modules/.bin/npm-run-all --serial fix:format fix:lint",
+    "fix:format": "./node_modules/.bin/js-beautify test/*.html --replace --editorconfig --brace-style end-expand --operator-position before-newline",
+    "fix:lint": "./node_modules/.bin/eslint test/*.html --fix --config .eslintrc.js"
   }
 }
