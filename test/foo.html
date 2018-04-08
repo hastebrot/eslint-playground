@@ -1,0 +1,22 @@
+<script>
+  function foo(bar) {
+    if (bar >= 0) {
+      return "QUUX";
+    } else {
+      return "QUUUX"
+    }
+  }
+
+  const bar = { x: 42 }
+
+
+  const baz = function (baz) {
+    return "baz" + baz + "baz"
+      + baz + "baz" + baz
+  }
+
+  try {
+    throw "error message"
+  }
+  catch (err) { console.log(err) }
+</script>
