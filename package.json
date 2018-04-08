@@ -1,6 +1,6 @@
 {
   "name": "eslint-playground",
-  "description": "Playground for code formatter and linter",
+  "description": "Playground for code formatter and linter.",
   "version": "0.1.0",
   "author": "Benjamin Gudehus <benjamin.gudehus@canoo.com>",
   "repository": {
