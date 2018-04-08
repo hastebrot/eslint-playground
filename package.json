@@ -1,0 +1,18 @@
+{
+  "name": "eslint-playground",
+  "description": "",
+  "version": "0.1.0",
+  "author": "Benjamin Gudehus <benjamin.gudehus@canoo.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hastebrot/eslint-playground.git"
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "js-beautify": "1.7.5"
+  },
+  "scripts": {
+    "format": "./node_modules/.bin/js-beautify test/*.html --replace --editorconfig --brace-style end-expand --operator-position before-newline"
+  }
+}
